@@ -1,0 +1,19 @@
+start
+Declarations
+    num accountBalance
+	//accountBalance is provided by the user
+    num timesOverDrawn
+	//timesOverDrawn is provided by the user
+    num overDrawnFee
+	//overDrawnFee is calculated by (accountBalance * .01) – 5 (timesOverDrawn)
+    num newBalance
+	//newBalance is calculated by (accountBalance – overDrawnFee)
+
+    input accountBalance
+    input timesOverDrawn
+	Calculate overDrawnFee = (accountBalance * .01) – 5 (timesOverDrawn)
+    output overDrawnFee
+	Calculate newBalance = (accountBalance – overDrawnFee)
+   output newBalance
+   output “Thanks for using this program”
+stop

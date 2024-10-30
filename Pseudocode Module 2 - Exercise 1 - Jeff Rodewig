@@ -1,0 +1,21 @@
+start
+Declarations
+    string nameModel
+	//nameModel is provided by the user 
+     num heightInches
+	//heightInches is provided by the user
+    num widthInches
+	//widthInches is provided by the user
+    num depthInches
+	//depthInches is provided by the user
+    num cubicFeet
+	//cubicFeet is calculated by heightInches * widthInches * depthInches / 1728
+
+    input nameModel
+    input heightInches
+    input widthInches
+    input depthInches
+	Calculate cubicFeet = (heightInches * widthInches * depthInches) / 1728
+    output nameModel
+    output cubicFeet
+stop

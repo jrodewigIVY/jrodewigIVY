@@ -1,0 +1,23 @@
+start
+Declarations
+    num numSelection
+	//numSelection is the secret number provided by a user 
+     num numGuess
+	//numGuess is the number provided by a user   
+
+   	output “Enter a number between 1 and 100” 
+   	input numSelection
+while (numSelection>100) or (numSelection <1)
+output “Guess a number between 1 and 100”
+input numGuess
+	if (numGuess = numSelection) then
+		output “you win!”
+	endif
+	if (numGuesss < numSelection) then
+		output "Too low”
+	endif
+	if (numGuess > numSelection) then
+		output “Too high”
+	endif
+while not (numGuess = numSelection)
+stop

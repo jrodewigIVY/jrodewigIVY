@@ -1,0 +1,14 @@
+start
+Declarations
+	String wordSearched
+		//The word that is being searched for in the dictionary
+
+output “turtle”
+	if wordSearched = first letter A-S
+		then flip pages forward
+	endif
+	if wordSearched = first letter U-Z
+		then flip pages backward
+	endif
+if wordSearched = first letter T
+	then output “word found”

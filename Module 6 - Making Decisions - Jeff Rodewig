@@ -1,0 +1,26 @@
+start
+      declarations	
+baseFee = 5
+numTax = .14
+	num = areaCode
+	num – phoneNumber
+	num = textMessage
+	num = totalBill
+	num = finalBill
+	num = textTax
+
+input areaCode
+input phone
+input textMessage
+      if (textMessage <= 100) then 
+	      totalBill = baseFee
+	        if (textMessage > 100) AND (textMessage <= 300) then
+		        totalBill = (textMessage – 100)  *.03 + baseFee
+		          if (textMessage > 300) then
+			          textTax = (textMessage – 300) 
+			          totalBill = (textTax *.02) + [(textMessage – 100 – textTax) * .03) + baseFee
+			        endIf
+		      endIf
+      endif
+FinalBill = (totalBill * numTax)
+Output areaCode AND phoneNumber AND textMessage AND FinalBill 

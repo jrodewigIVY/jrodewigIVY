@@ -1,0 +1,16 @@
+start
+	Declarations
+		num count = 0
+		num numYear
+		num numSpend = 60,000
+		num numRate = .03
+		num total
+	ouput “Please enter projected number of years until retirement”
+	input numYear
+	while numYear <= 30
+		total = (numYear * numSpend * numRate)
+		count = count + 1
+	endwhile
+	output total
+end
+		

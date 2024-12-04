@@ -1,0 +1,14 @@
+Start
+      Declarations
+	num number
+	num accumNum = 0
+	num QUIT = 0
+      output “Enter a number”
+      input number
+  while number <> 0
+    accumNum = accumNum + number
+	  output “Enter next number”
+	  input number
+  endwhile
+  ouput “Total”  =, accumNum
+end

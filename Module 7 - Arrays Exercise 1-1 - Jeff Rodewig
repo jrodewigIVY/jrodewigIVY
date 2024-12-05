@@ -1,0 +1,9 @@
+start
+	Declarations
+	num SIZE = 20
+  array SIZE = 20
+  numEnter
+output “Enter up to twenty numbers”
+input numEnter
+output reverse “numEnter
+end

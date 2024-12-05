@@ -1,0 +1,35 @@
+start
+	num addOn
+	num price
+	num SIZE = 5
+	num ADD_INS [SIZE] = “whipped cream”, “Cinnamon”, “Chocolate sauce”, “Amaretto”, 
+“Irish Whiskey”
+	num VALID-PRICES[SIZE} = 0.89, 0.25, 0.59, 1.50, 1.75
+	num sub
+	string foundit
+	num badItemCount = 0
+	string MSG_YES = “item added”
+	string MSG_NO = “Sorry, we do not carry that”
+	num FINISH = 0
+	num totalPrice = (VALID-PRICES + 2)
+output “Enter add-ons that you would like”
+input addOn
+foundit = “N”
+sub = 0
+while sub < SIZE
+	if item = ADD_INS[sub] then
+		foundit = “Y”
+		price = VALID_PRICES[sub]
+	endif
+	sub = sub + 1
+endwhile
+if foundit = “Y” then
+	output MSG_YES
+	output “The price of “, addON, “ is “, price
+else
+	output MSG_NO
+	badItemCount = badItemCount + 1
+endif
+output “Enter next add-on or”, FINISH, “ to quit “
+input addOn
+out “Your total is “, totalPrice

@@ -1,0 +1,68 @@
+start
+	Declarations
+		InputFile geraldsBusinesses
+		InputFile geraldinesBusinesses
+		OutputFile mergedFile
+string geraldName
+num geraldsBusinesses
+string geraldineName
+num geraldinesBusinesses
+string END_NAME = “ZZZZZZ”
+string areBothatEnd = “N”
+	getReady()
+	while areBothAtEnd <> “Y”
+		mergeRecords()
+	endwhile
+	finishUp()
+stop
+
+getReady()
+	open geraldsBusinesses “Geralds_Businesses.csv”
+	open geraldinesBusiness “Geraldines_Businesses.csv”
+	open mergedFile “Clients.csv”
+	readGerald()
+	readGeraldine()
+	checkEnd()
+return
+
+
+
+
+readGerald()
+	input geraldName, geraldBalance from geraldBusinesses
+	if eof then
+		geraldName = END_NAME
+	end if
+return
+
+readGeraldine()
+	input geraldineName, geraldineBalance from geraldineBusinesses
+	it eof then
+		geraldineName = END_NAME
+	endif
+return
+
+checkEnd()
+	if geraldName = END_NAME then
+		if geraldineName = END_NAME then
+			areBothAtEnd = “Y”
+		endif
+	endif
+return
+
+mergeRecords()
+	if geraldName , geraldineName then
+		output geraldName, geraldBalance to mergedFile
+		// more to come
+	else
+		output geraldineName, geraldineBalance to mergedFile
+		// more to come
+
+finishUp()
+	close geraldsBusinesses
+	close geraldinesBusinesses
+	close mergedFile
+return	
+
+
+	

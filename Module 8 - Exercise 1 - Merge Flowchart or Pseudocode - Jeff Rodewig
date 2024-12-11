@@ -53,10 +53,12 @@ return
 mergeRecords()
 	if geraldName , geraldineName then
 		output geraldName, geraldBalance to mergedFile
-		// more to come
+		readGerald()
 	else
 		output geraldineName, geraldineBalance to mergedFile
-		// more to come
+		readGeraldine()
+	endif
+	checkEnd()
 
 finishUp()
 	close geraldsBusinesses

@@ -3,13 +3,14 @@ start
 		InputFile geraldsBusinesses
 		InputFile geraldinesBusinesses
 		OutputFile mergedFile
-string geraldName
-num geraldsBusinesses
-string geraldineName
-num geraldinesBusinesses
-string END_NAME = “ZZZZZZ”
-string areBothatEnd = “N”
-	getReady()
+		string geraldName
+		num geraldsBusinesses
+		string geraldineName
+		num geraldinesBusinesses
+		string END_NAME = “ZZZZZZ”
+		string areBothatEnd = “N”
+	
+getReady()
 	while areBothAtEnd <> “Y”
 		mergeRecords()
 	endwhile
